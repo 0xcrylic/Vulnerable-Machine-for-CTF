@@ -1,6 +1,6 @@
 ```markdown
 # 🎭 Port-Scan-Troll  
-> A pre-built Ubuntu 22.04 VM that answers **“OPEN”** on **every TCP port** (1-65530) – except the two you actually need.  
+> A pre-built Ubuntu 22.04 VM that answers **“OPEN”** on **every TCP port** (1-65 530) – except the two you actually need.  
 Perfect for CTFs, red-team labs, or just driving your friends’ nmap scripts insane.
 
 ---
@@ -23,11 +23,8 @@ Perfect for CTFs, red-team labs, or just driving your friends’ nmap scripts in
 
 ---
 
-## 🕹️ Quick start
+## 🔍 Quick test
 ```bash
-# inside the VM (login: troll / troll)
-ip -br a                # find VM IP
-
 # from any attacker box
 nmap -p- --min-rate 1000 <VM_IP>
 masscan <VM_IP> -p1-65535 --rate 10000
@@ -48,4 +45,4 @@ MIT – scripts, configs, and the `.ova` itself. Hack, share, remix.
 
 ## 🤝 Contributing
 Found a bug or want extra troll levels?  
-PRs welcome at [https://github.com/0xcrylic/Vulnerable-Machine-for-CTF](https://github.com/0xcrylic/Vulnerable-Machine-for-CTF) , [https://linkedin.com/in/astersec](https://linkedin.com/in/astersec)
+PRs welcome at [GitHub](https://github.com/0xcrylic/Vulnerable-Machine-for-CTF) · Ping me on [LinkedIn](https://linkedin.com/in/astersec)
